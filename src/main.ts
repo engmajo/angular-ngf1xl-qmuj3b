@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputOverviewExample } from './app/input-overview-example';
+import { DemoMaterialModule } from './app/material-module';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { InputOverviewExample } from './app/input-overview-example';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-
+    DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
   ],

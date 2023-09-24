@@ -1,3 +1,7 @@
-<textarea class="text-area" formControlName="script"></textarea>
-
-<button (click)="formatar()">Formatar</button>
+<form class="example-form" [formGroup]="formulario">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Script SQL</mat-label>
+    <textarea class="text-area" formControlName="script" matInput></textarea>
+  </mat-form-field>
+  <button (click)="formatar()">Formatar</button>
+</form>
