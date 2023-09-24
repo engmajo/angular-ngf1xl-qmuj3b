@@ -24,7 +24,14 @@ export class InputOverviewExample {
 
   formatar() {
     this.formulario.setValue({
-      script: format(this.formulario.value.script),
+      script: format(this.formulario.value.script, {
+        language: 'sql',
+        keywordCase: 'upper',
+        useTabs: true,
+        linesBetweenQueries: 2,
+        indentStyle: 'tabularLeft',
+        tabulateAlias: true,
+      }),
     });
   }
 }
